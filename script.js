@@ -17,3 +17,12 @@ function book(title, author, pages, read) {
 function addBookToLibrary() {
   // do stuff here
 }
+
+const theHobbit = new book(
+  "The Hobbit",
+  "J.R.R. Tolkien",
+  "295 pages",
+  "not read yet",
+);
+
+console.log(theHobbit.info());
