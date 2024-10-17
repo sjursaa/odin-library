@@ -3,7 +3,6 @@ console.log("Hello World");
 const myLibrary = [];
 
 function book(title, author, pages, read) {
-  // ctor
   this.title = title;
   this.author = author;
   this.pages = pages;
@@ -15,8 +14,11 @@ function book(title, author, pages, read) {
 }
 
 function addBookToLibrary() {
+  // TODO: add functionality using user input (temporarily)
   // do stuff here
 }
+
+// TODO: add function that loops through array, and displays each book on page
 
 const theHobbit = new book(
   "The Hobbit",
