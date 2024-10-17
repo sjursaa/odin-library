@@ -25,4 +25,16 @@ const theHobbit = new book(
   "not read yet",
 );
 
+const theLordOfTheRings = new book(
+  "The Lord of the Rings",
+  "J.R.R. Tolkien",
+  "295 pages",
+  "not read yet",
+);
+
+myLibrary.push(theHobbit);
+myLibrary.push(theLordOfTheRings);
+
 console.log(theHobbit.info());
+
+console.log(myLibrary);
