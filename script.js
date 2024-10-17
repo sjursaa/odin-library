@@ -40,3 +40,7 @@ myLibrary.push(theLordOfTheRings);
 console.log(theHobbit.info());
 
 console.log(myLibrary);
+
+// TODO: add button for adding new book (HTML ??)
+// TODO: add button to each books display for removing them (DOM)
+// TODO: add button for each books display for changing read status (DOM)
