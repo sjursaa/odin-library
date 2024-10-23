@@ -14,8 +14,11 @@ function book(title, author, pages, read) {
 }
 
 function addBookToLibrary() {
-  // TODO: add functionality using user input (temporarily)
-  // do stuff here
+  let title = prompt("title");
+  let author = prompt("author");
+  let pages = prompt("pages");
+  let read = prompt("read");
+  myLibrary.push(new book(title, author, pages, read));
 }
 
 // TODO: add function that loops through array, and displays each book on page
@@ -38,6 +41,8 @@ myLibrary.push(theHobbit);
 myLibrary.push(theLordOfTheRings);
 
 console.log(theHobbit.info());
+
+addBookToLibrary();
 
 console.log(myLibrary);
 
