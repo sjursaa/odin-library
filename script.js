@@ -42,7 +42,9 @@ myLibrary.push(theLordOfTheRings);
 
 console.log(theHobbit.info());
 
-addBookToLibrary();
+// TODO: add eventListener to the add new book button and call function
+const addBookButton = document.querySelector("#add-new-book");
+addBookButton.onclick = () => addBookToLibrary();
 
 console.log(myLibrary);
 
