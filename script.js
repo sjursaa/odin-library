@@ -42,12 +42,10 @@ myLibrary.push(theLordOfTheRings);
 
 console.log(theHobbit.info());
 
-// TODO: add eventListener to the add new book button and call function
 const addBookButton = document.querySelector("#add-new-book");
 addBookButton.onclick = () => addBookToLibrary();
 
 console.log(myLibrary);
 
-// TODO: add button for adding new book (HTML ??)
 // TODO: add button to each books display for removing them (DOM)
 // TODO: add button for each books display for changing read status (DOM)
