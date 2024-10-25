@@ -47,10 +47,15 @@ addBookButton.onclick = () => addBookToLibrary();
 
 console.log(myLibrary);
 
+// TODO: Put all this stuff in addBookToLibrary function
 const container = document.querySelector("#container");
 const form = document.createElement("FORM");
-form.style.color = "blue";
+form.style.backgroundColor = "blue";
+form.style.display = "flex";
 form.setAttribute("id", "form");
+// form.setAttribute("display", "flex");
+form.setAttribute("flex-direction", "row");
+
 // form.textContent = "hello world";
 container.appendChild(form);
 
@@ -76,7 +81,7 @@ form.appendChild(inputRead);
 
 const submitButton = document.createElement("BUTTON");
 submitButton.setAttribute("type", "submit");
-submitButton.setAttribute("value", "submit");
+submitButton.textContent = "Submit";
 form.appendChild(submitButton);
 
 // TODO: add button to each books display for removing them (DOM)
