@@ -43,46 +43,56 @@ myLibrary.push(theLordOfTheRings);
 console.log(theHobbit.info());
 
 const addBookButton = document.querySelector("#add-new-book");
-addBookButton.onclick = () => addBookToLibrary();
+addBookButton.onclick = () => createForm();
 
 console.log(myLibrary);
 
 // TODO: Put all this stuff in addBookToLibrary function
-const container = document.querySelector("#container");
-const form = document.createElement("FORM");
-form.style.backgroundColor = "blue";
-form.style.display = "flex";
-form.setAttribute("id", "form");
-// form.setAttribute("display", "flex");
-form.setAttribute("flex-direction", "row");
+function createForm() {
+  const container = document.querySelector("#container");
+  const form = document.createElement("FORM");
+  form.style.backgroundColor = "blue";
+  form.style.display = "flex";
+  form.setAttribute("id", "form");
+  // form.setAttribute("display", "flex");
+  form.setAttribute("flex-direction", "row");
 
-// form.textContent = "hello world";
-container.appendChild(form);
+  // form.textContent = "hello world";
+  container.appendChild(form);
 
-const inputTitle = document.createElement("INPUT");
-inputTitle.setAttribute("type", "text");
-inputTitle.setAttribute("value", "title");
-form.appendChild(inputTitle);
+  const inputTitle = document.createElement("INPUT");
+  inputTitle.setAttribute("type", "text");
+  inputTitle.setAttribute("value", "Harry P");
+  form.appendChild(inputTitle);
 
-const inputAuthor = document.createElement("INPUT");
-inputAuthor.setAttribute("type", "text");
-inputAuthor.setAttribute("value", "author");
-form.appendChild(inputAuthor);
+  const inputAuthor = document.createElement("INPUT");
+  inputAuthor.setAttribute("type", "text");
+  inputAuthor.setAttribute("value", "J.K. Rowling");
+  form.appendChild(inputAuthor);
 
-const inputPages = document.createElement("INPUT");
-inputPages.setAttribute("type", "text");
-inputPages.setAttribute("value", "pages");
-form.appendChild(inputPages);
+  const inputPages = document.createElement("INPUT");
+  inputPages.setAttribute("type", "text");
+  inputPages.setAttribute("value", "57");
+  form.appendChild(inputPages);
 
-const inputRead = document.createElement("INPUT");
-inputRead.setAttribute("type", "text");
-inputRead.setAttribute("value", "y/N");
-form.appendChild(inputRead);
+  const inputRead = document.createElement("INPUT");
+  inputRead.setAttribute("type", "text");
+  inputRead.setAttribute("value", "yes");
+  form.appendChild(inputRead);
 
-const submitButton = document.createElement("BUTTON");
-submitButton.setAttribute("type", "submit");
-submitButton.textContent = "Submit";
-form.appendChild(submitButton);
+  const submitButton = document.createElement("BUTTON");
+  submitButton.setAttribute("type", "submit");
+  submitButton.textContent = "Submit";
+  form.appendChild(submitButton);
+
+  submitButton.onclick = () => addBookToLibrary();
+
+  // const button = document.querySelector("BUTTON");
+  // button.onclick = () => createForm()
+
+  // const addBookButton = document.querySelector("#add-new-book");
+  // addBookButton.onclick = () => createForm();
+}
 
 // TODO: add button to each books display for removing them (DOM)
 // TODO: add button for each books display for changing read status (DOM)
