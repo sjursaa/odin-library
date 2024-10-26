@@ -87,20 +87,20 @@ function createForm() {
   form.appendChild(submitButton);
 
   submitButton.onclick = () => {
-    // myLibrary.push(
-    //   new book(
-    //     inputTitle.textContent,
-    //     inputAuthor.textContent,
-    //     inputPages.textContent,
-    //     inputRead.textContent,
-    //   ),
-    // );
+    myLibrary.push(
+      new book(
+        inputTitle.value,
+        inputAuthor.value,
+        inputPages.value,
+        inputRead.value,
+      ),
+    );
 
-    console.log(inputTitle.textContent);
-    console.log(inputAuthor.textContent);
-    console.log(inputPages.textContent);
-    console.log(inputRead.textContent);
-    // console.log(myLibrary);
+    console.log(inputTitle.value);
+    console.log(inputAuthor.value);
+    console.log(inputPages.value);
+    console.log(inputRead.value);
+    console.log(myLibrary);
   };
 
   // const button = document.querySelector("BUTTON");
