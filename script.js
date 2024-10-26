@@ -85,7 +85,21 @@ function createForm() {
   submitButton.textContent = "Submit";
   form.appendChild(submitButton);
 
-  submitButton.onclick = () => addBookToLibrary();
+  submitButton.onclick = () =>
+    myLibrary.push(
+      new book(
+        inputTitle.textContent,
+        inputAuthor.textContent,
+        inputPages.textContent,
+        inputRead.textContent,
+      ),
+    );
+
+  console.log(inputTitle.textContent);
+  console.log(inputAuthor.textContent);
+  console.log(inputPages.textContent);
+  console.log(inputRead.textContent);
+  console.log(myLibrary);
 
   // const button = document.querySelector("BUTTON");
   // button.onclick = () => createForm()
