@@ -81,7 +81,7 @@ function createForm() {
   form.appendChild(inputRead);
 
   const submitButton = document.createElement("BUTTON");
-  // type: button, as to not disappear when pressed for debug purposes
+  // TODO: revert: (type: button, as to not disappear when pressed for debug purposes)
   submitButton.setAttribute("type", "button");
   submitButton.textContent = "Submit";
   form.appendChild(submitButton);
