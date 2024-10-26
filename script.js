@@ -55,9 +55,8 @@ function createForm() {
   form.style.display = "flex";
   form.setAttribute("id", "form");
   // form.setAttribute("display", "flex");
-  form.setAttribute("flex-direction", "row");
+  // form.setAttribute("flex-direction", "column");
 
-  // form.textContent = "hello world";
   container.appendChild(form);
 
   const inputTitle = document.createElement("INPUT");
@@ -82,7 +81,7 @@ function createForm() {
 
   const submitButton = document.createElement("BUTTON");
   // switch between submit/button to debug
-  submitButton.setAttribute("type", "submit");
+  submitButton.setAttribute("type", "button");
   submitButton.textContent = "Submit";
   form.appendChild(submitButton);
 
@@ -102,12 +101,6 @@ function createForm() {
     console.log(inputRead.value);
     console.log(myLibrary);
   };
-
-  // const button = document.querySelector("BUTTON");
-  // button.onclick = () => createForm()
-
-  // const addBookButton = document.querySelector("#add-new-book");
-  // addBookButton.onclick = () => createForm();
 }
 
 // TODO: add button to each books display for removing them (DOM)
