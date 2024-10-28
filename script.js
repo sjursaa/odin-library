@@ -103,5 +103,11 @@ function createForm() {
   };
 }
 
+
+const container = document.querySelector("#container");
+const table = document.createElement("TABLE");
+table.style.backgroundColor = "blue";
+container.appendChild(table);
+
 // TODO: add button to each books display for removing them (DOM)
 // TODO: add button for each books display for changing read status (DOM)
