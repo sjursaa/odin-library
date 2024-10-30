@@ -142,11 +142,30 @@ function fillTable() {
     row2.setAttribute("id", "myTr");
     table.appendChild(row2);
 
+    // TODO: refactor using loop
     let td = document.createElement("TD");
-    let textNode = document.createTextNode(element.info());
-    console.log(element.info());
+    let textNode = document.createTextNode(element.info().split(",")[0]);
+    console.log(element.info().split(",")[0]);
     td.appendChild(textNode);
     row2.appendChild(td);
+
+    let td2 = document.createElement("TD");
+    let textNode2 = document.createTextNode(element.info().split(",")[1]);
+    console.log(element.info().split(",")[1]);
+    td2.appendChild(textNode2);
+    row2.appendChild(td2);
+
+    let td3 = document.createElement("TD");
+    let textNode3 = document.createTextNode(element.info().split(",")[2]);
+    console.log(element.info().split(",")[2]);
+    td3.appendChild(textNode3);
+    row2.appendChild(td3);
+
+    let td4 = document.createElement("TD");
+    let textNode4 = document.createTextNode(element.info().split(",")[3]);
+    console.log(element.info().split(",")[3]);
+    td4.appendChild(textNode4);
+    row2.appendChild(td4);
   });
 }
 
