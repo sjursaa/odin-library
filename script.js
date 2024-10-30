@@ -9,7 +9,9 @@ function book(title, author, pages, read) {
   this.read = read;
   this.info = function () {
     // TODO: format string properly
-    return this.title + this.author + this.pages + this.read;
+    return (
+      this.title + ", " + this.author + ", " + this.pages + ", " + this.read
+    );
   };
 }
 
@@ -94,6 +96,7 @@ function createForm() {
         inputPages.value,
         inputRead.value,
       ),
+      fillTable(),
     );
 
     console.log(inputTitle.value);
