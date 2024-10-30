@@ -23,8 +23,6 @@ function addBookToLibrary() {
   myLibrary.push(new book(title, author, pages, read));
 }
 
-// TODO: add function that loops through array, and displays each book on page
-
 const theHobbit = new book(
   "The Hobbit",
   "J.R.R. Tolkien",
@@ -50,7 +48,6 @@ addBookButton.onclick = () => createForm();
 
 console.log(myLibrary);
 
-// TODO: Put all this stuff in addBookToLibrary function
 function createForm() {
   const container = document.querySelector("#container");
   const form = document.createElement("FORM");
@@ -154,10 +151,6 @@ function fillTable() {
 }
 
 fillTable();
-
-// const row2 = document.createElement("TR");
-// row2.setAttribute("id", "myTr");
-// table.appendChild(row2);
 
 // TODO: add button to each books display for removing them (DOM)
 // TODO: add button for each books display for changing read status (DOM)
