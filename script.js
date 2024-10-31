@@ -48,6 +48,19 @@ addBookButton.onclick = () => createForm();
 
 console.log(myLibrary);
 
+// function click(title, author, pages, read) {
+//   myLibrary.push(new book(title, author, pages, read), fillTable());
+//
+//   event.preventDefault();
+//   fillTable();
+//
+//   console.log(title);
+//   console.log(author);
+//   console.log(pages);
+//   console.log(read);
+//   console.log(myLibrary);
+// }
+
 function createForm() {
   const container = document.querySelector("#container");
   const form = document.createElement("FORM");
@@ -94,9 +107,10 @@ function createForm() {
         inputRead.value,
       ),
       event.preventDefault(),
-      fillTable(),
+      // fillTable(),
     );
 
+    fillTable();
     console.log(inputTitle.value);
     console.log(inputAuthor.value);
     console.log(inputPages.value);
