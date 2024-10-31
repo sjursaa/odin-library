@@ -107,6 +107,8 @@ function createForm() {
 
 function fillTable() {
   const container = document.querySelector("#container");
+  container.replaceChildren();
+
   const table = document.createElement("TABLE");
   table.setAttribute("id", "myTable");
   table.setAttribute("border", "solid");
