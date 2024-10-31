@@ -81,7 +81,7 @@ function createForm() {
 
   const submitButton = document.createElement("BUTTON");
   // switch between submit/button to debug
-  submitButton.setAttribute("type", "button");
+  submitButton.setAttribute("type", "submit");
   submitButton.textContent = "Submit";
   form.appendChild(submitButton);
 
@@ -93,6 +93,7 @@ function createForm() {
         inputPages.value,
         inputRead.value,
       ),
+      event.preventDefault(),
       fillTable(),
     );
 
