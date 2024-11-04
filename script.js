@@ -172,6 +172,29 @@ function fillTable() {
     console.log(element.info().split(",")[3]);
     td4.appendChild(textNode4);
     row2.appendChild(td4);
+
+    let td5 = document.createElement("TD");
+    let removeButton = document.createElement("BUTTON");
+    // removeButton.setAttribute("text", "remove");
+    removeButton.innerText = "Remove Book";
+    td5.appendChild(removeButton);
+    row2.appendChild(td5);
+
+    removeButton.onclick = () => {
+      console.log(element.info());
+      console.log("remove button clicked");
+    };
+
+    let td6 = document.createElement("TD");
+    let changePagesButton = document.createElement("BUTTON");
+    changePagesButton.innerText = "Change Pages";
+    td6.appendChild(changePagesButton);
+    row2.appendChild(td6);
+
+    changePagesButton.onclick = () => {
+      console.log(element.info());
+      console.log("changePagesButton clicked");
+    };
   });
 }
 
