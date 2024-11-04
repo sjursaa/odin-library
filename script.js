@@ -149,10 +149,13 @@ function fillTable() {
   td4.appendChild(textNode4);
   row.appendChild(td4);
 
+  let i = 0;
   myLibrary.forEach((element) => {
     console.log(element);
     let row2 = document.createElement("TR");
     row2.setAttribute("id", "myTr");
+    row2.setAttribute("data", i);
+    i++;
     table.appendChild(row2);
 
     // TODO: refactor using loop
@@ -202,9 +205,7 @@ function fillTable() {
     row2.appendChild(td6);
 
     changeReadButton.onclick = () => {
-      console.log(element.info());
-      console.log("changeReadButton clicked");
-      myLibrary[1].toggle();
+      myLibrary[row2.getAttribute("data")].toggle();
       fillTable();
     };
   });
