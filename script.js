@@ -13,6 +13,13 @@ function book(title, author, pages, read) {
       this.title + ", " + this.author + ", " + this.pages + ", " + this.read
     );
   };
+  this.toggle = function () {
+    if (this.read == "read") {
+      this.read = "not read yet";
+    } else if (this.read == "not read yet") {
+      this.read = "read";
+    }
+  };
 }
 
 function addBookToLibrary() {
@@ -183,6 +190,9 @@ function fillTable() {
     removeButton.onclick = () => {
       console.log(element.info());
       console.log("remove button clicked");
+      // TODO: pop the correct book
+      console.log(textNode);
+      fillTable();
     };
 
     let td6 = document.createElement("TD");
@@ -194,6 +204,8 @@ function fillTable() {
     changeReadButton.onclick = () => {
       console.log(element.info());
       console.log("changeReadButton clicked");
+      myLibrary[1].toggle();
+      fillTable();
     };
   });
 }
