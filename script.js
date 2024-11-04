@@ -186,14 +186,14 @@ function fillTable() {
     };
 
     let td6 = document.createElement("TD");
-    let changePagesButton = document.createElement("BUTTON");
-    changePagesButton.innerText = "Change Pages";
-    td6.appendChild(changePagesButton);
+    let changeReadButton = document.createElement("BUTTON");
+    changeReadButton.innerText = "Change Read";
+    td6.appendChild(changeReadButton);
     row2.appendChild(td6);
 
-    changePagesButton.onclick = () => {
+    changeReadButton.onclick = () => {
       console.log(element.info());
-      console.log("changePagesButton clicked");
+      console.log("changeReadButton clicked");
     };
   });
 }
