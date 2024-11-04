@@ -191,10 +191,7 @@ function fillTable() {
     row2.appendChild(td5);
 
     removeButton.onclick = () => {
-      console.log(element.info());
-      console.log("remove button clicked");
-      // TODO: pop the correct book
-      console.log(textNode);
+      myLibrary.splice(row2.getAttribute("data"), 1);
       fillTable();
     };
 
@@ -212,6 +209,3 @@ function fillTable() {
 }
 
 fillTable();
-
-// TODO: add button to each books display for removing them (DOM)
-// TODO: add button for each books display for changing read status (DOM)
