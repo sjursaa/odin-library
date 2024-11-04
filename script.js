@@ -47,22 +47,8 @@ addBookButton.onclick = () => createForm();
 
 const redrawTableButton = document.querySelector("#redraw-table");
 redrawTableButton.onclick = () => fillTable();
-// addBookButton.onclick = () => fillTable();
 
 console.log(myLibrary);
-
-// function click(title, author, pages, read) {
-//   myLibrary.push(new book(title, author, pages, read), fillTable());
-//
-//   event.preventDefault();
-//   fillTable();
-//
-//   console.log(title);
-//   console.log(author);
-//   console.log(pages);
-//   console.log(read);
-//   console.log(myLibrary);
-// }
 
 function createForm() {
   const container = document.querySelector("#container");
