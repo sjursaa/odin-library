@@ -63,8 +63,6 @@ function createForm() {
   form.style.backgroundColor = "blue";
   form.style.display = "flex";
   form.setAttribute("id", "form");
-  // form.setAttribute("display", "flex");
-  // form.setAttribute("flex-direction", "column");
 
   container.appendChild(form);
 
@@ -85,11 +83,10 @@ function createForm() {
 
   const inputRead = document.createElement("INPUT");
   inputRead.setAttribute("type", "text");
-  inputRead.setAttribute("value", "yes");
+  inputRead.setAttribute("value", "read");
   form.appendChild(inputRead);
 
   const submitButton = document.createElement("BUTTON");
-  // switch between submit/button to debug
   submitButton.setAttribute("type", "submit");
   submitButton.textContent = "Submit";
   form.appendChild(submitButton);
@@ -122,7 +119,6 @@ function fillTable() {
   const table = document.createElement("TABLE");
   table.setAttribute("id", "myTable");
   table.setAttribute("border", "solid");
-  // table.style.backgroundColor = "blue";
   container.appendChild(table);
 
   const row = document.createElement("TR");
@@ -185,7 +181,6 @@ function fillTable() {
 
     let td5 = document.createElement("TD");
     let removeButton = document.createElement("BUTTON");
-    // removeButton.setAttribute("text", "remove");
     removeButton.innerText = "Remove Book";
     td5.appendChild(removeButton);
     row2.appendChild(td5);
