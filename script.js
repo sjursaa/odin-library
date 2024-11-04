@@ -1,6 +1,6 @@
 console.log("Hello World");
 
-const myLibrary = [];
+let myLibrary = [];
 
 function book(title, author, pages, read) {
   this.title = title;
@@ -88,18 +88,17 @@ function createForm() {
   form.appendChild(submitButton);
 
   submitButton.onclick = () => {
-    myLibrary.push(
-      new book(
-        inputTitle.value,
-        inputAuthor.value,
-        inputPages.value,
-        inputRead.value,
-      ),
-      event.preventDefault(),
-      // fillTable(),
-    );
+    event.preventDefault(),
+      myLibrary.push(
+        new book(
+          inputTitle.value,
+          inputAuthor.value,
+          inputPages.value,
+          inputRead.value,
+        ),
+      );
 
-    // fillTable();
+    fillTable();
 
     console.log(inputTitle.value);
     console.log(inputAuthor.value);
