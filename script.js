@@ -44,6 +44,9 @@ console.log(theHobbit.info());
 
 const addBookButton = document.querySelector("#add-new-book");
 addBookButton.onclick = () => createForm();
+
+const redrawTableButton = document.querySelector("#redraw-table");
+redrawTableButton.onclick = () => fillTable();
 // addBookButton.onclick = () => fillTable();
 
 console.log(myLibrary);
@@ -110,7 +113,8 @@ function createForm() {
       // fillTable(),
     );
 
-    fillTable();
+    // fillTable();
+
     console.log(inputTitle.value);
     console.log(inputAuthor.value);
     console.log(inputPages.value);
